@@ -10,6 +10,4 @@ class KingsController < ApplicationController
         render json: king
     end
 
-    def create
-    end
 end
