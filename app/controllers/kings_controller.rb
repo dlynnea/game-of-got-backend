@@ -14,7 +14,7 @@ class KingsController < ApplicationController
         newKing = King.create(
             name: params[:name]
         )
-        render json: newKing
+        redirect_to "http://localhost:3001"
     end
 
     def update
