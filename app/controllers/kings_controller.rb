@@ -10,4 +10,16 @@ class KingsController < ApplicationController
         render json: king
     end
 
+    def create
+        newKing = King.create(
+            name: params[:name]
+        )
+        render json: newKing
+    end
+
+    def update
+        king = King.find(params[:id])
+        render json: king
+    end
+
 end
