@@ -7,7 +7,7 @@ class KingsController < ApplicationController
 
     def show
         king = King.find(params[:id])
-        render json: king
+        render json: king, include: :houses
     end
 
     def create
@@ -20,6 +20,12 @@ class KingsController < ApplicationController
     def update
         king = King.find(params[:id])
         render json: king
+    end
+
+    def destroy
+        king = King.find(params[:id])
+        king.delete
+        render json: "King Deleted"
     end
 
 end
