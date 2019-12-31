@@ -10,4 +10,12 @@ class HousesController < ApplicationController
         render json: house
     end
 
+    # def create
+    #     newHouse = House.create(
+    #         name: params[:name]
+    #     )
+    #     render json: newHouse
+    # end
+
+
 end
