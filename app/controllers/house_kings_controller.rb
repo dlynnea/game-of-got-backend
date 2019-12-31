@@ -12,7 +12,8 @@ class HouseKingsController < ApplicationController
 
     def update
         house = HouseKing.find(params[:id])
-        render json: house
+        houseUpdated = house.update
+        render json: houseUpdated
     end
 
 end
