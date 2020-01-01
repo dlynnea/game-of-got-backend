@@ -2,7 +2,7 @@ class KingsController < ApplicationController
 
     def index
         kings = King.all 
-        render json: kings
+        render json: kings, include: :houses
     end
 
     def show

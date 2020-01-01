@@ -2,12 +2,12 @@ class HousesController < ApplicationController
 
     def index
         houses = House.all 
-        render json: houses
+        render json: houses, include: :king
     end
 
     def show
         house = House.find(params[:id])
-        render json: house
+        render json: house, include: :king
     end
 
     def create
