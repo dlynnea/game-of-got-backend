@@ -1,3 +1,3 @@
 class House < ApplicationRecord
-    belongs_to :king
+    belongs_to :king, optional: true
 end
