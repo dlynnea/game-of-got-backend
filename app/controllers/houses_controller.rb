@@ -24,7 +24,8 @@ class HousesController < ApplicationController
             king_id: params[:king_id]
         )
 
-        render json: {message: "House #{updatingHouse.name} has been switched to #{updatingHouse.king.name}"}
+        # This render line does not work with king:null
+        # render json: {message: "House #{updatingHouse.name} has been switched to #{updatingHouse.king.name}"}
     end
 
 end

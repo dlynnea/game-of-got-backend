@@ -24,7 +24,7 @@ class KingsController < ApplicationController
 
     def destroy
         king = King.find(params[:id])
-        king.delete
+        king.destroy
         render json: "King Deleted"
     end
 
