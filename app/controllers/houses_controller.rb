@@ -17,8 +17,14 @@ class HousesController < ApplicationController
         render json: newHouse
     end
 
-    # def update
+    def update
+        updatingHouse = House.find(params[:id])
+        updatingHouse.update(
+            name: params[:name],
+            king_id: params[:king_id]
+        )
 
-    # end
+        render json: {message: "House #{updatingHouse.name} has been switched to #{updatingHouse.king.name}"}
+    end
 
 end
