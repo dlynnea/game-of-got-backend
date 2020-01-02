@@ -24,6 +24,9 @@ class KingsController < ApplicationController
 
     def destroy
         king = King.find(params[:id])
+
+        king.houses.update_all({king_id: nil})
+
         king.destroy
         render json: "King Deleted"
     end
