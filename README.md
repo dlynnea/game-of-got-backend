@@ -3,7 +3,8 @@
 - Front-end: https://github.com/deadnettle90/mod2-project-frontend
 
 # Introduction
-Welcome to The Game of Game of Thrones, and welcome to Westeros, a land of ice, fire, fickle politics. The continent is in a state of war, with many claimants to the title of king of Westeros. Beneath each king are the houses, families, and lords of Westeros, pledging loyalty and service to the king they believe has the greatest right and claim to rule... or they are simply sworn to whoever is left. Kings come and go, and houses shift allegiance as often as the wind changes, but if one king was able to eliminate all others, perhaps that would quell the chaos and flux.
+Welcome to The Game of Game of Thrones, and welcome to Westeros, a land of ice, fire, fickle politics. The continent is in a state of war, with many claimants to the title of king of Westeros. Beneath each king are the houses, families, and lords of Westeros, pledging 
+loyalty and service to the king they believe has the greatest right and claim to rule... or they are simply sworn to whoever is left. Kings come and go, and houses shift allegiance as often as the wind changes, but if one king was able to eliminate all others, perhaps that would quell the chaos and flux.
 
 # Technology Stack
 The back-end is using Ruby on Rails and a PostgreSQL database, and is using a MVC framework to model a King having many Houses, and Houses belonging to a King.
